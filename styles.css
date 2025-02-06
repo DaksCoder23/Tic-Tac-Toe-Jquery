@@ -1,0 +1,48 @@
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: 310px;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    background: #f0f0f0;
+    border: 2px solid #333;
+    font-size:48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cell:hover{
+    background: #e0e0e0;
+}
+#status{
+    font-size: 24px;
+    margin: 20px 0;
+}
+#restart{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#restart:hover{
+    background: #45a049;
+}
+.winning-cell{
+    background: #90EE90 !important;
+}
